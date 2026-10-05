@@ -107,7 +107,7 @@ Chạy 5 ô. Bạn đã sẵn sàng khi thấy dòng `device = cuda`, dòng `�
 ### Phần 3 — Keypoints và Pose (25')
 
 | Mục | Việc cần làm | Bạn đã làm đúng khi |
-|---|---|---|
+|---|---|---| 
 | **3A** (8') | Chạy 2 ô, rồi đổi `KP_THR = -100` và chạy lại ô thứ hai. Trả lời **Q7**. | Keypoint R-CNN ra `(2, 17, 3)`, YOLO26n-pose ra `(2, 17, 2)`; khi bỏ ngưỡng, Keypoint R-CNN vẽ cả đầu gối và mắt cá dù chúng nằm ngoài ảnh. |
 | **3B** (10') | Điền `oks` (3 chỗ). Chạy ô thí nghiệm. Trả lời **Q8**. | `✅ oks đạt`; đồ thị có ba đường cong theo kích thước người; dòng `Lệch 8 px: mắt còn 0.53, hông còn 0.97`. |
 | **3C** (7') | Điền `joint_angle` (2 chỗ). Chạy ô áp dụng. Trả lời **Q9**. | `✅ joint_angle đạt`; trên ảnh gốc thân nghiêng khoảng 1° (`đứng`), trên ảnh xoay 90° thân nghiêng 83–94° (`🚨 NGÃ?`) và model chỉ tìm được 3 người. |
